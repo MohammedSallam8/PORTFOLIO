@@ -1,0 +1,162 @@
+.main-content{
+  flex: .8 1;
+  padding: 0!important;
+  margin: 0!important;
+  --bs-gutter-x: 0!important;
+  --bs-gutter-y: 0!important;
+
+
+  .route-pages{
+    height: 95vh;
+    overflow: auto;
+    width: 100%;
+
+    .home-page-container{
+      background-image: url(./cover.jpg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      height: 95vh;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      
+
+      &::before{
+        background-color: rgba(0, 0, 0, .788);
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+      }
+
+      .home-page-content{
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-top: 200px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+
+        @media (max-width: 1114px) {
+              padding-top: 85px;
+        }
+        
+
+        h1{
+          font-size: 50px;
+        }
+
+        .help-desc{
+          color: #b9b9b9;
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 35px;
+          margin: 20px auto;
+          width: 50%;
+
+          @media (max-width: 884px) {
+                line-height: 30px;
+                width: 90%;
+          }
+        }
+        .typing-item{
+          margin-bottom: 25px;
+          .iam{
+            color: rgb(206, 206, 206);
+            display: inline-block;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-right: 5px;
+            border-bottom: none;
+          }
+          span{
+            color: brown;
+            font-size: 1.2em;
+            font-weight: 700;
+            padding-bottom: 2px;
+            border-bottom: 2px solid brown;
+          }
+        }
+      }
+    }
+  }
+
+  .skils-items{
+    width: 100%;
+
+    .main-skils{
+      width: 50%;
+      border-bottom: 1px solid rgba(171, 171, 171, 0.204);
+      border-top: 1px solid rgba(171, 171, 171, 0.204);
+      margin: 0px auto;
+      padding: 20px 0px;
+
+      @media (max-width: 884px) {
+            width: 80%;
+      }
+    }
+  }
+}
+.skills-img{
+  font-size: 45px;
+}
+.sass{
+  color: rgb(197, 0, 0);
+}
+.boot{
+  color: rgb(120, 0, 156);
+}
+.git{
+  color: rgb(196, 78, 0);
+}
+.js{
+  color: #fff;
+}
+.css{
+  color: rgb(0, 50, 163)
+}
+.mui{
+  color: rgb(0, 24, 192)
+}
+.react{
+  color: rgb(0, 73, 156);
+}
+.html{
+  color: rgb(128, 128, 0);
+
+}
+@media (max-width: 700px){
+  .main-content{
+    flex: 1!important;
+  }
+  .home-page-content{
+    padding-top: 85px!important;
+  }
+  h1 {
+    font-size: 40px!important;
+  }
+  .help-desc{
+    font-size: .95rem!important;
+    line-height: 30px!important;
+    width: 90%!important;
+  }
+  .skils-items {
+    width: 100%!important;
+  }
+  .main-skils {
+    width: 85%!important;
+  }
+}
+@media (max-width: 700px) {
+  .skills-img {
+      font-size: 35px !important;
+  }
+}

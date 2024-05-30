@@ -1,0 +1,209 @@
+.all-content{
+
+.content-header{
+  flex: .8 1;
+  padding: 0 40px 0 0!important;
+  margin: 0!important;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 67%, .204);
+  height: 5vh;
+  justify-content: right;
+
+  @media (max-width: 700px) {
+        height: 8vh;
+    }
+
+  .social-items{
+    padding: 10px 0;
+    position: relative;
+
+    .link-items{
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin: 0 20px;
+    text-align: left;
+    padding-bottom: 6px;
+    
+    li{
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 17px;
+      margin: 0 5px;
+      width: 25px;
+      font-size: 25px;
+
+
+      a{
+        display: block;
+        position: relative;
+        width: 100%;
+        
+        
+
+        .git{
+          color: var(--primary-text-color);
+        }
+        .whats{
+          color: green;
+        }
+        .gmail{
+          color: red;
+        }
+        .linked{
+          color: #004f99;
+        }
+      }
+    }
+    }
+  }
+}
+.dropend{
+  position: absolute!important;
+
+  @media (min-width: 701px) {
+    display: none;
+  }
+
+  .dropdown-toggle::after {
+    content: url(./icon.svg)!important;
+    width: 40px;
+    border: 0!important;
+  }
+
+  .dropdown-toggle{
+    color: brown!important;
+    width: 30px!important;
+    height: 30px!important;
+    background-color: transparent!important;
+    border: none;
+    padding: 0!important;
+  }
+}
+.dropdown-menu.show{
+  background-color: var(--background-color);
+  transform: translateY(20px)!important;
+  transition: all .5s!important;
+  inset: 22px auto auto 0px!important;
+}
+
+
+
+.sidebar-item1 {
+  flex: .2 1;
+  height: 100%;
+
+  .sidebar-content{
+    height: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+
+    .animation{
+      animation-duration: 1000ms;
+      animation-timing-function: ease;
+      animation-delay: 0ms;
+      animation-name: animation-1rg2aqu;
+      animation-direction: normal;
+      animation-fill-mode: both;
+      animation-iteration-count: 1;
+
+      .img-user{
+        height: 100px;
+        margin: 0 auto 100px;
+        width: 100px;
+
+        img{
+          border-radius: 50%;
+          height: 100%;
+          width: 100%;
+          transition: all .5s;
+
+          &:hover{
+            transform: scale(1.5);
+            border: 1px solid brown;
+          }
+        }
+      }
+      .link-items{
+        border-bottom: 1px solid hsla(0, 0%, 67%, .204);
+        border-top: 1px solid hsla(0, 0%, 67%, .204);
+        list-style: none;
+        margin: 0;
+        padding: 25px 0;
+        
+        li a{
+          color: #a8a8a8fa;
+          display: block;
+          font-size: 17px;
+          font-weight: 400;
+          text-decoration: none;
+
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+
+        li a.active {
+          color: #007888;
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        li:nth-child(2n) {
+          margin: 15px;
+        }
+      }
+      .resume{
+        border: none;
+        padding-top: 15px;
+        width: 100%;
+
+        a{
+          align-items: center;
+          border: 1px solid #009185;
+          border-radius: 10px;
+          color: #009185;
+          display: flex;
+          justify-content: space-evenly;
+          margin: 0 auto;
+          padding: 5px 20px;
+          text-decoration: none;
+          width: 170px;
+
+          &:hover{
+            background-color: #009185;
+            color: #fff;
+
+            .resume-btn{
+              color: #fff;
+            }
+          }
+
+          svg{
+            font-size: 25px !important;
+            vertical-align: middle;
+          }
+        }
+
+        button{
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+
+        .resume-btn{
+          color: #009185;
+          font-size: 22px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.cloth{
+  color: brown;
+}
+}

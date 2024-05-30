@@ -1,0 +1,216 @@
+.main-content{
+  flex: .8 1;
+  z-index: 0;
+
+  .route-pages{
+    height: 95vh;
+    overflow: auto;
+    width: 100%;
+
+    background-image: url(./cover-about.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    width: 100%;
+
+      
+      
+
+      &::before{
+        background-color: rgba(0, 0, 0, .788);
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+      }
+
+    .about-page-container{
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: relative;
+      z-index: 1;
+      
+
+      .about-page-content{
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        padding: 100px 0;
+
+        @media (max-width: 1114px) {
+              padding: 25px 0!important;
+      }
+
+        .title{
+          color: brown;
+            font-size: 2em;
+            font-weight: 700;
+            margin: 0 0 20px;
+            padding-bottom: 5px;
+            position: relative;
+
+            @media (max-width: 884px) {
+                  font-size: 1.5em;
+              }
+
+            &::after{
+              background-color: hsla(0, 0%, 81%, .404);
+              bottom: 0;
+              content: "";
+              height: 1px;
+              left: 0;
+              position: absolute;
+              width: 165px;
+            }
+        }
+
+        .about-item{
+          margin-bottom: 40px;
+
+          @media (max-width: 700px) {
+                margin-bottom: 20px!important;
+            }
+            
+
+          p{
+            color: #b9b9b9;
+            font-size: 1.1rem;
+            line-height: 30px;
+            width: 85%;
+
+            @media (max-width: 884px) {
+                  font-size: 1.1rem;
+                  width: 100%;
+              }
+            }
+          }
+
+          .education-items{
+            margin-bottom: 40px;
+              }
+
+              .education-item{
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+
+                @media (max-width: 700px) {
+                      display: block;
+                      text-align: left;
+                  }
+
+
+                p{
+                  color: #b9b9b9;
+                  font-size: 13px;
+                  font-weight: 500;
+                  margin-bottom: 0;
+
+                  @media (max-width: 700px) {
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                h4{
+                  color: #009185;
+                  font-size: 1.4rem;
+                }
+              }
+            }
+
+            .lang-items{
+              margin-bottom: 40px;
+              
+              @media (max-width: 700px) {
+                    margin-bottom: 20px;
+                }
+              
+
+              .lang-item{
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+
+                @media (max-width: 700px) {
+                  display: block;
+                }
+
+                h5{
+                  color: #009185;
+                  flex: .5 1;
+                  font-size: 1.1rem;
+                  letter-spacing: 3px;
+                }
+                h5:nth-child(2n) {
+                  text-align: right;
+
+                  @media (max-width: 700px) {
+                    text-align: left;
+                }
+              }
+              }
+            }
+
+            .ref-items{
+              margin-bottom: 40px;
+
+              @media (max-width: 700px) {
+                margin-bottom: 20px;
+              }
+              
+
+              ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li{
+                  margin: 20px 0;
+                  margin-right: 15px;
+                  font-size: 22px;
+
+                  a{
+                    text-decoration: none;
+                  }
+
+                  .git{
+                    color: #fff;
+                    margin-right: 15px;
+                  }
+                  .gmail{
+                    color: red;
+                    margin-right: 15px;
+                  }
+                  .whats{
+                    color: green;
+                    margin-right: 15px;
+                  }
+
+                  .linked{
+                    margin-right: 15px;
+                  }
+
+                  span{
+                    color: #009185;
+                    font-size: 14px;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
